@@ -4,11 +4,14 @@ Z,X ---------------- Up/down camera
 0 ------------------ display mouse cunsor    
 1 ------------------ disabled mouse cunsor    
 
-cmake:
+cmake:         
+cd OpenGLDemo     
 mkdir -p out    
 cd out    
 cmake -G"Visual Studio 16 2019" ${COMMON_CMAKE_CONFIG_PARAMS} ../    
+or  cmake -G"Visual Studio 17 2022" ${COMMON_CMAKE_CONFIG_PARAMS} ../     
 cmake --build . --config Debug    
 
 run：     
-run Demo_AO.exe
+cd bin/Demo/Debug     
+./Demo__AO.exe
